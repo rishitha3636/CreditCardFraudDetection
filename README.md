@@ -28,9 +28,7 @@ pip install -r requirements.txt
 python credit_fraud_detection.py
 3️⃣ Predict Using the Trained Model
 import joblib
-# Load the trained model
 model = joblib.load("credit_fraud_model.pkl")
-# Sample input (Replace with actual feature values)
 sample_data = [[500, 12, 0.5, -1.2, 0.8, 1.1, 0.7, -0.3, 1.4, -0.9]]
 prediction = model.predict(sample_data)
 print("Fraud Prediction:", "Fraud" if prediction[0] == 1 else "Legit")
